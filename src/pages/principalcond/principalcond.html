@@ -1,0 +1,63 @@
+<!--
+  Generated template for the PrincipalcondPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <div>
+    <button class="b2" ion-button icon-only color="dark" round clear class="sal" (click)="Regre()">
+      <ion-icon name="exit">
+      </ion-icon>
+    </button>
+
+
+    <!--<button class="b2" ion-button icon-only color="dark" round clear class="sal" (click)="copia()">
+      <ion-icon name="copy">
+      </ion-icon>
+    </button>-->
+
+    <button class="b2" ion-button icon-only color="dark" round clear class="ayu" (click)="Ayuda()">
+      <ion-icon name="md-help-circle">
+      </ion-icon>
+    </button>
+  </div>
+
+</ion-header>
+
+
+<ion-content padding>
+  <br>
+  <br>
+  <br>
+  <div align="center">
+    <img class="lati" src="assets/imgs/latiem.png" alt="">
+  </div>
+  <br>
+  <br>
+  <!---->
+
+  <!---->
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Estado</ion-label>
+
+      <ion-select [(ngModel)]="candreva" (ionChange)="onChange(candreva)" cancelText="Cancelar" okText="Aceptar" align="center">
+        <ion-option  selected={{this.ob1}} >Activo</ion-option>
+        <ion-option  selected={{this.ob2}}>Inactivo</ion-option>
+        <ion-option  selected={{this.ob3}}>Ausente</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full color="dark" (click)="Punto()" [disabled]="botondis">Comenzar recorrido</button>
+  <br>
+  <button ion-button full color="dark" (click)="Ver()">Ver perfil</button>
+  
+
+
+
+
+</ion-content>

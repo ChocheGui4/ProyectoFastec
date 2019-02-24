@@ -1,0 +1,7 @@
+{
+  "name": "NewLatiem",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,55 @@
+<!--
+  Generated template for the UnidadesCondPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+  <div>
+    
+    <button class="b2" ion-button icon-only color="dark" round clear class="ayu" (click)="Ayuda()" >
+      <ion-icon name="md-help-circle">
+      </ion-icon>
+    </button>
+  </div>
+  </ion-header>
+  
+  
+  <ion-content padding>
+      
+      <br>
+      <div class="centrado">
+        <ion-icon md="md-bus" ios="ios-bus" class="bus"></ion-icon>    
+      </div>
+      <h2 class="centrado">Usuarios en espera</h2>
+  
+      <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-5>
+                  <ion-icon ios="ios-people" md="md-people" class="usu1"></ion-icon>
+                  <label>  Usuarios: 8</label><br><br>    
+                  <ion-icon ios="ios-people" md="md-people" class="usu1"></ion-icon>
+                  <label>  Usuarios: 10</label><br><br>    
+                  <ion-icon ios="ios-people" md="md-people" class="usu1"></ion-icon>
+                  <label>  Usuarios: 5</label><br><br>     
+              </ion-col>
+              <ion-col col-6>
+                  <label>  Parada: Mercado</label> 
+                  <ion-icon float="right" icon-right ios="ios-bus" md="md-bus" class="usu2"></ion-icon><br><br>
+                  <label>  Parada: Comex</label> 
+                  <ion-icon ios="ios-bus" md="md-bus" class="usu2"></ion-icon><br><br>
+                  <label>  Parada: Baños</label> 
+                  <ion-icon ios="ios-bus" md="md-bus" class="usu2"></ion-icon><br><br>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <div align="center">
+          <br><br><br><br><br><br><br>
+          <button ion-button color="dark"  (click)="menu()" >Finalizar recorrido</button>
+        </div>
+  
+  </ion-content>
+  

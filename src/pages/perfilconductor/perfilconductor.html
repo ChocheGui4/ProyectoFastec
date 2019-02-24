@@ -1,0 +1,224 @@
+<!--
+  Generated template for the PerfilconductorPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <div>
+    <button ion-button icon-only color="dark" round clear class="calls1" (click)="Regresar()">
+      <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+    </button>
+
+    <button class="b2" ion-button icon-only color="dark" round clear class="help" (click)="Ayuda()">
+      <ion-icon name="md-help-circle">
+      </ion-icon>
+    </button>
+  </div>
+
+</ion-header>
+
+<ion-content>
+
+  <div align="center">
+    <h3>MIS DATOS PERSONALES</h3>
+  </div>
+
+  <hr>
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-1>
+
+        </ion-col>
+
+        <ion-col col-10>
+          <ion-list>
+            <ion-item>
+              <ion-input type="text" placeholder="Username" [(ngModel)]="data.user_name" disabled="true">
+
+
+              </ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+
+  <div>
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1>
+
+          </ion-col>
+          <ion-col col-1>
+            <br>
+            <ion-icon name="call" class="calls">
+
+            </ion-icon>
+          </ion-col>
+          <ion-col col-9>
+            <ion-list>
+              <ion-item>
+                <ion-input type="text" placeholder="Telefono" isActive="false" [(ngModel)]="data.user_cell" disabled="true"></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1>
+
+          </ion-col>
+          <ion-col col-1>
+            <br>
+            <ion-icon name="md-mail" class="calls">
+
+            </ion-icon>
+          </ion-col>
+          <ion-col col-9>
+            <ion-list>
+              <ion-item>
+                <ion-input type="text" placeholder="Correo" isActive="false" [(ngModel)]="data.user_email" disabled="true"></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1>
+
+          </ion-col>
+          <ion-col col-1>
+            <br>
+            <ion-icon name="bus" class="calls">
+
+            </ion-icon>
+          </ion-col>
+          <ion-col col-9>
+            <ion-list>
+              <ion-item>
+                <ion-input type="text" placeholder="Número de la unidad" [(ngModel)]="data.user_num" isActive="false" disabled="true"></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1>
+
+          </ion-col>
+          <ion-col col-1>
+            <br>
+            <ion-icon name="card" class="calls">
+
+            </ion-icon>
+          </ion-col>
+          <ion-col col-9>
+            <ion-list>
+              <ion-item>
+                <ion-input type="text" placeholder="Placas" isActive="false" [(ngModel)]="data.user_placas" disabled="true"></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1>
+
+          </ion-col>
+          <ion-col col-1>
+            <br>
+            <ion-icon name="contact" class="calls">
+
+            </ion-icon>
+          </ion-col>
+          <ion-col col-9>
+            <ion-list>
+              <ion-item>
+                <ion-input type="text" placeholder="Nombre de usuario" isActive="false" [(ngModel)]="data.user_user" disabled="true"></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1>
+
+          </ion-col>
+          <ion-col col-1>
+            <br>
+            <ion-icon name="lock" class="calls"></ion-icon>
+          </ion-col>
+          <ion-col col-7>
+            <ion-list>
+              <ion-item>
+                <ion-input [type]="getType()" placeholder="Contraseña" disabled [(ngModel)]="data.user_pass">
+
+                </ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+          <ion-col col-1>
+
+            <button ion-button clear color="dark" (click)="toggleTextPassword()">
+              <ion-icon [name]="myIcon" class="calls"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-1>
+
+        </ion-col>
+        <ion-col col-5>
+          <button ion-button icon-left round block secondary clear color="danger" (click)="IraEditar()">
+            <ion-icon name="create"></ion-icon>
+            Editar
+          </button>
+        </ion-col>
+        <ion-col col-5>
+          <button ion-button icon-left round block secondary clear color="danger" (click)="Eliminar()">
+            <ion-icon name="trash"></ion-icon>
+            Eliminar
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
