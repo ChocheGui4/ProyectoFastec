@@ -1,0 +1,34 @@
+<!--
+  Generated template for the DireccionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Direccion</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div align="center" >
+        <br><br><br>
+          <img class="imgf" src="assets/imgs/notice1.png">
+        </div>
+    <ion-list>
+        <ion-item>
+          <ion-label>Elegir dirección</ion-label>
+    
+          <ion-select [(ngModel)]="candreva"  cancelText="Cancelar" okText="Aceptar" align="center">
+            <ion-option   >Tlaxcala - San Martín</ion-option>
+            <ion-option  >San Martín - Tlaxcala</ion-option>
+            
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <div align="center">
+          <button ion-button type="submit" color="dark" (click)="Mapa()">Comenzar recorrido</button>
+          <button ion-button type="submit" color="dark" (click)="iniciodesesion()">Salir</button>
+      </div>
+
+</ion-content>

@@ -144,6 +144,9 @@ export class IniciarsesionPage {
   Registrarse() {
     this.navCtrl.push("RegistrarPage");
   }
+  Omitir(){
+    this.navCtrl.push("PrincipalusuarioPage");
+  }
 
   
   ionViewDidLoad() {
